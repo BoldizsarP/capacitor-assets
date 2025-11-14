@@ -49,7 +49,7 @@ Where the provided flags are:
 - `--android` - explicitly run Android asset generation. Using a platform flag makes the platform list exclusive.
 - `--pwa` - explicitly run PWA asset generation. Using a platform flag makes the platform list exclusive.
 - `--pwaAppleSizesFile <path>` - Path to a file containing Apple device screen sizes. The file should contain device size declarations in the format `WIDTHxHEIGHT @DENSITYx` (e.g., `1290x2796 @3x`).
-
+- `--pwaNoAppleFetch` - Whether to fetch the latest screen sizes for Apple devices from the official Apple site. Set to true if running offline to use local cached sizes (may be occasionally out of date).
 ### Usage - Custom Mode
 
 This mode provides full control over the assets used to generate icons and splash screens, but requires more source files. To use this mode, provide custom icons and splash screen source images as shown below:
